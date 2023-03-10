@@ -27,6 +27,7 @@ requirements:
     - automake
     - libtool
     - make
+    - openblas
   host:
     - fftw
     - liblapacke
