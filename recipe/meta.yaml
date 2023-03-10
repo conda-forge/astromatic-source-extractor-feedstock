@@ -27,12 +27,16 @@ requirements:
     - automake
     - libtool
     - make
+    - lapack
     - openblas
   host:
     - fftw
     - liblapacke
+    - libopenblas
   run:
     - fftw
+    - liblapacke
+    - libopenblas
 
 test:
   source_files:
