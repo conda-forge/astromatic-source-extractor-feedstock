@@ -32,7 +32,9 @@ requirements:
     - fftw
     - openblas
   run:
+    - cfitsio
     - fftw
+    - openblas
 
 test:
   source_files:
