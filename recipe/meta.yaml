@@ -31,7 +31,7 @@ requirements:
     - fitsio
     - openblas
     - fftw
-run:
+  run:
     - fftw
 
 test:
