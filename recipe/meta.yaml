@@ -28,9 +28,9 @@ requirements:
     - libtool
     - make
   host:
-    - fitsio
-    - openblas
+    - cfitsio
     - fftw
+    - openblas
   run:
     - fftw
 
