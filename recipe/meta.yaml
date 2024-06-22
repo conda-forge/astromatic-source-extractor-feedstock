@@ -18,11 +18,12 @@ source:
 
 build:
   skip: true  # [win]
-  number: 4
+  number: 5
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - autoconf
     - automake
     - libtool
