@@ -11,5 +11,7 @@ sh autogen.sh
     --with-openblas-incdir=${PREFIX}/include \
     --with-openblas-libdir=${PREFIX}/lib
 make
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}" != "" ]]; then
 make check
+fi
 make install
