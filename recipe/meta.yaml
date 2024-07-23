@@ -15,6 +15,8 @@ source:
     - 0002-Disable_ldactoasc_build.patch
     # Rename the executable and its man page
     - 0003-Rename_CLI_tool.patch
+    # Needed for osx_arm64_
+    - 0004-Fix-finite.patch
 
 build:
   skip: true  # [win]
