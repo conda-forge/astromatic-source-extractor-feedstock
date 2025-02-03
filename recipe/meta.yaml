@@ -1,5 +1,5 @@
 {% set name = "sextractor" %}
-{% set version = "2.28.0" %}
+{% set version = "2.28.2" %}
 
 package:
   name: astromatic-source-extractor
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/astromatic/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 36f5afcdfe74cbf1904038a4def0166c1e1dde883e0030b87280dfbdfcd81969
+  sha256: d92c5214ea75b8a70214d7d7f6824207fc53861ec923ceb2cc574f2ec9effa94
   patches:
     - 0001-Search-lapacke-library.patch
     # Disable the compilation of ldactoasc.
@@ -15,12 +15,10 @@ source:
     - 0002-Disable_ldactoasc_build.patch
     # Rename the executable and its man page
     - 0003-Rename_CLI_tool.patch
-    # Needed for osx_arm64_
-    - 0004-Fix-finite.patch
 
 build:
   skip: true  # [win]
-  number: 6
+  number: 0
 
 requirements:
   build:
