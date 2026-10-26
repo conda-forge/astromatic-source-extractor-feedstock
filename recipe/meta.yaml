@@ -1,5 +1,5 @@
 {% set name = "sextractor" %}
-{% set version = "2.28.2" %}
+{% set version = "2.29.0" %}
 
 package:
   name: astromatic-source-extractor
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/astromatic/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: d92c5214ea75b8a70214d7d7f6824207fc53861ec923ceb2cc574f2ec9effa94
+  sha256: f260886b1609f3a3dbe82ea14152761ed0434bc37631be4121137fee36025111
   patches:
     - 0001-Search-lapacke-library.patch
     # Disable the compilation of ldactoasc.
@@ -18,7 +18,7 @@ source:
 
 build:
   skip: true  # [win]
-  number: 4
+  number: 0
 
 requirements:
   build:
